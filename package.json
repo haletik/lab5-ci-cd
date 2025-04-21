@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "dev": "vite",
-  "build": "tsc && vite build",
-  "preview": "vite preview",
-  "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-  "test": "vitest run",
-  "test:watch": "vitest"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src", 
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
