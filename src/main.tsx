@@ -1,17 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+function sayHello(name: string) {
+  // eslint-disable-next-line no-console
+  console.log("Hello, " + name);
+}
 
-const App = () => {
-  return (
-    <div style={{ textAlign: 'center', marginTop: '100px' }}>
-      <h1>Hello from React! 🚀</h1>
-      <p>This site is deployed on GitHub Pages 😺</p>
-    </div>
-  );
-};
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+sayHello("World");
