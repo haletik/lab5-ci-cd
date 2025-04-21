@@ -6,7 +6,7 @@ import { defineConfig } from "@eslint/config-helpers";
 
 export default defineConfig({
   // ⛔ Ігноруємо конкретний файл
-  ignores: ["src/main.tsx"],
+  // ignores: ["src/main.tsx"],
 
   // ✅ Масив конфігів, які застосовуються
   configs: [
