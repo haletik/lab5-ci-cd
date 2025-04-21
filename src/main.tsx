@@ -1,7 +1,17 @@
-function sayHello(name: string) {
-    console.log("Hello, " + name);
-}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-sayHello("World");
+const App = () => {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '100px' }}>
+      <h1>Hello from React! 🚀</h1>
+      <p>This site is deployed on GitHub Pages 😺</p>
+    </div>
+  );
+};
 
-const unused = 42;
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
