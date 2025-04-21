@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { configDefaults } from 'vitest/config'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/lab5-ci-cd/', // назва вашого репозиторію
-});
+  base: '/lab5-ci-cd/',
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/SetupTest.tsx',
+    exclude: [...configDefaults.exclude],
+  },
+})
